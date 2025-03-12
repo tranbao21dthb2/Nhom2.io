@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Nhóm 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .member {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .member img:hover {
+            transform: scale(1.1);
+        }
+        .member button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .member button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giới Thiệu Nhóm 2</h1>
+    <div class="container">
+        <div class="member">
+            <img src="img/quocbao.jpg" alt="Thành viên 1">
+            <button onclick="goToMemberPage('baotran.html')">Xem chi tiết</button>
+        </div>
+        <div class="member">
+            <img src="img/minhhuy.jpg" alt="Thành viên 2">
+            <button onclick="goToMemberPage('index.html')">Xem chi tiết</button>
+        </div>
+        <div class="member">
+            <img src="img/tringuyen.jpg" alt="Thành viên 3">
+            <button onclick="goToMemberPage('member3.html')">Xem chi tiết</button>
+        </div>
+        <div class="member">
+            <img src="img/quocbao.jpg" alt="Thành viên 4">
+            <button onclick="goToMemberPage('index.html')">Xem chi tiết</button>
+        </div>
+    </div>
+    
+    <script>
+        function goToMemberPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
