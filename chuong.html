@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông Tin Thành Viên</title>
+    // ... existing code ...
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
+    
         .container {
-            max-width: 600px;
+            max-width: 800px;  /* Tăng độ rộng container */
             margin: 50px auto;
-            background: white;
+            background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            width: 250px;  /* Tăng kích thước ảnh */
+            height: 250px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .skills-section {
+            background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            text-align: left;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .back-button:hover {
-            background-color: #0056b3;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -53,20 +48,29 @@
         <p><strong>Ngày Sinh:</strong> 20/10/2003</p>
         <p><strong>Học Lực:</strong> Khá</p>
         <p><strong>Bằng Cấp:</strong> Cử nhân Công Nghệ Thông Tin (Đang học)</p>
-        <p><strong>Các Môn Học Chuyên Ngành:</strong></p>
-        <ul>
-            <li>Lập trình Java & Spring Boot</li>
-            <li>Phát triển ứng dụng di động với Dart & Flutter</li>
-            <li>Lập trình Web với Node.js và PHP</li>
-            <li>Cấu trúc dữ liệu và giải thuật</li>
-            <li>Trí tuệ nhân tạo và khai thác dữ liệu</li>
-        </ul>
-        <p><strong>Kinh Nghiệm Cá Nhân:</strong></p>
-        <ul>
-            <li>Phát triển hệ thống quản lý sinh viên bằng PHP</li>
-            <li>Xây dựng ứng dụng di động với Flutter</li>
-            <li>Phát triển Web với Node.js & React.js</li>
-        </ul>
+        
+        <div class="skills-section">
+            <p><strong>Các Môn Học Chuyên Ngành:</strong></p>
+            <ul>
+                <li>Lập trình Java & Spring Boot</li>
+                <li>Phát triển ứng dụng di động với Dart & Flutter</li>
+                <li>Lập trình Web với Node.js và PHP</li>
+                <li>Cấu trúc dữ liệu và giải thuật</li>
+                <li>Trí tuệ nhân tạo và khai thác dữ liệu</li>
+            </ul>
+        </div>
+
+        <div class="skills-section">
+            <p><strong>Kinh Nghiệm Cá Nhân:</strong></p>
+            <ul>
+                <li>Phát triển hệ thống quản lý sinh viên bằng PHP</li>
+                <li>Xây dựng ứng dụng di động với Flutter</li>
+                <li>Phát triển Web với Node.js & React.js</li>
+                <li>Quản lý mã nguồn với Git và GitHub</li>
+                <li>Làm việc nhóm và phát triển dự án theo phương pháp Agile</li>
+            </ul>
+        </div>
+
         <a href="intro_nhom2.html" class="back-button">Quay lại</a>
     </div>
 </body>
